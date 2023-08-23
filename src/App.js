@@ -119,6 +119,8 @@ export default function App() {
         setError("");
         return;
       }
+      handleCloseMovie();
+
       fetchMoviews();
       return function () {
         controller.abort();
